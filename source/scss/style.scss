@@ -1,0 +1,42 @@
+$calar: red;
+%link_border {
+    border-bottom: 5px dashed red;
+}
+//Для текста
+@mixin style($f, $c, $bg) {
+    font-size: $f;
+    color: $c;
+    background-color: $bg;
+}
+.bloc {
+    background-color: bisque;
+    width: 300px / 960px * 100%;
+    font-size: 30px;
+    line-height: 30px;
+
+    p {
+        color: blue;
+
+        &:hover {
+            color: $calar;
+            cursor: pointer;
+        }
+    }
+
+    .bloc-text {
+        background-color: rgb(145, 150, 150);
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .link {
+        font-size: 20px;
+        @extend %link_border;
+    }
+}
+
+.link-2 {
+    @include style(100px, red, blue);
+    @extend %link_border;
+}

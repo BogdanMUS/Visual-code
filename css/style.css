@@ -1,0 +1,32 @@
+.link-2, .bloc .link {
+  border-bottom: 5px dashed red;
+}
+
+.bloc {
+  background-color: bisque;
+  width: 31.25%;
+  font-size: 30px;
+  line-height: 30px;
+}
+.bloc p {
+  color: blue;
+}
+.bloc p:hover {
+  color: red;
+  cursor: pointer;
+}
+.bloc .bloc-text {
+  background-color: rgb(145, 150, 150);
+}
+.bloc .bloc-text h1 {
+  font-size: 20px;
+}
+.bloc .link {
+  font-size: 20px;
+}
+
+.link-2 {
+  font-size: 100px;
+  color: red;
+  background-color: blue;
+}
